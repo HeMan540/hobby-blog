@@ -601,11 +601,109 @@ a {
   font-size: 0.9rem;
 }
 
+.star-wars-content {
+  max-width: 100%;
+}
+
+.star-wars-intro {
+  margin-bottom: 40px;
+  font-size: 1.08rem;
+  color: var(--muted);
+  line-height: 1.8;
+  border-left: 3px solid var(--accent);
+  padding-left: 20px;
+}
+
+.star-wars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+  margin-bottom: 48px;
+}
+
+.star-wars-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid rgba(208, 168, 92, 0.25);
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(25, 63, 108, 0.15), rgba(25, 29, 33, 0.5));
+  padding: 32px 24px;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.star-wars-card:hover {
+  transform: translateY(-4px);
+  background: linear-gradient(180deg, rgba(25, 63, 108, 0.25), rgba(25, 29, 33, 0.8));
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+  border-color: rgba(208, 168, 92, 0.5);
+}
+
+.sw-card-icon {
+  font-size: 2.8rem;
+  margin-bottom: 16px;
+  line-height: 1;
+}
+
+.star-wars-card h3 {
+  margin: 12px 0 12px;
+  font-family: "Cinzel", serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.star-wars-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.star-wars-projects {
+  background: linear-gradient(180deg, rgba(25, 63, 108, 0.1), rgba(19, 22, 25, 0.96));
+  border: 1px solid rgba(208, 168, 92, 0.15);
+  border-radius: 18px;
+  padding: 28px;
+}
+
+.star-wars-projects h3 {
+  margin: 0 0 20px;
+  font-family: "Cinzel", serif;
+  font-size: 1.3rem;
+  color: var(--accent-strong);
+  letter-spacing: 0.02em;
+}
+
+.star-wars-projects ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.star-wars-projects li {
+  padding-left: 28px;
+  position: relative;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.star-wars-projects li::before {
+  content: "⭐";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
 @media (max-width: 860px) {
   .hero-inner,
   .two-column,
   .about-inner,
-  .post-grid {
+  .post-grid,
+  .star-wars-grid {
     grid-template-columns: 1fr;
   }
 
@@ -637,7 +735,9 @@ a {
   .post-card,
   .project-item,
   .about-card,
-  .quote-card {
+  .quote-card,
+  .star-wars-card,
+  .star-wars-projects {
     padding: 20px;
   }
 }
