@@ -586,223 +586,6 @@ a {
   line-height: 1.6;
 }
 
-.voting-intro {
-  max-width: 700px;
-  margin: 0 auto 40px;
-  text-align: center;
-  font-size: 1.08rem;
-  color: var(--muted);
-  line-height: 1.7;
-}
-
-.voting-current {
-  margin-bottom: 50px;
-}
-
-.current-winner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-  align-items: center;
-  border: 2px solid var(--accent-strong);
-  border-radius: 24px;
-  padding: 32px;
-  background: linear-gradient(135deg, rgba(214, 48, 49, 0.1), rgba(25, 29, 33, 0.6));
-}
-
-.winner-badge {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
-  color: #fff;
-  padding: 8px 16px;
-  border-radius: 999px;
-  font-weight: 600;
-  font-size: 0.85rem;
-}
-
-.winner-image {
-  position: relative;
-  border-radius: 16px;
-  overflow: hidden;
-  aspect-ratio: 4 / 3;
-}
-
-.winner-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.winner-info h3 {
-  margin: 0 0 12px;
-  font-family: "Cinzel", serif;
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  color: var(--text);
-}
-
-.winner-info p {
-  margin: 0 0 20px;
-  color: var(--muted);
-  font-size: 1.05rem;
-  line-height: 1.6;
-}
-
-.vote-count {
-  display: flex;
-  gap: 24px;
-}
-
-.vote-stat {
-  font-size: 1.1rem;
-  color: var(--text);
-}
-
-.vote-stat strong {
-  color: var(--accent-strong);
-}
-
-.voting-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  margin-bottom: 50px;
-}
-
-.voting-card {
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  background: var(--panel);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-}
-
-.voting-card:hover {
-  transform: translateY(-4px);
-  background: var(--panel-strong);
-  box-shadow: 0 16px 32px var(--shadow);
-}
-
-.vote-image {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  overflow: hidden;
-  background: #151b1f;
-}
-
-.vote-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.voting-card:hover .vote-image img {
-  transform: scale(1.05);
-}
-
-.vote-badge {
-  position: absolute;
-  bottom: 12px;
-  left: 12px;
-  background: rgba(10, 12, 14, 0.9);
-  color: var(--accent-strong);
-  padding: 6px 12px;
-  border-radius: 999px;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
-
-.vote-info {
-  padding: 18px;
-}
-
-.vote-info h4 {
-  margin: 0 0 14px;
-  font-family: "Cinzel", serif;
-  font-size: 1.1rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-}
-
-.vote-buttons {
-  display: flex;
-  gap: 10px;
-}
-
-.vote-btn {
-  flex: 1;
-  padding: 10px 14px;
-  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 0.95rem;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.vote-btn:hover,
-.vote-btn:focus-visible {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(214, 48, 49, 0.3);
-}
-
-.voting-cta {
-  margin-top: 40px;
-}
-
-.submit-box {
-  background: linear-gradient(135deg, rgba(214, 48, 49, 0.08), rgba(25, 29, 33, 0.5));
-  border: 1px solid rgba(214, 48, 49, 0.2);
-  border-radius: 20px;
-  padding: 32px;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.submit-box h3 {
-  margin: 0 0 16px;
-  font-family: "Cinzel", serif;
-  font-size: 1.4rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-}
-
-.submit-box p {
-  margin: 0 0 14px;
-  color: var(--muted);
-  line-height: 1.7;
-}
-
-.submit-box a {
-  color: var(--accent-strong);
-  font-weight: 600;
-}
-
-.submit-box ul {
-  margin: 14px 0;
-  padding-left: 20px;
-  color: var(--muted);
-  line-height: 1.8;
-}
-
-.submit-box li {
-  margin-bottom: 10px;
-}
-
-.submit-note {
-  margin-top: 16px !important;
-  font-size: 0.95rem;
-  color: var(--accent-strong);
-  font-weight: 600;
-}
-
 .contact-inner {
   max-width: 800px;
   margin: 0 auto;
@@ -1012,8 +795,7 @@ a {
   .two-column,
   .about-inner,
   .post-grid,
-  .star-wars-grid,
-  .current-winner {
+  .star-wars-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1031,10 +813,6 @@ a {
     text-align: center;
     padding: 16px 0;
   }
-
-  .current-winner {
-    padding: 24px;
-  }
 }
 
 @media (max-width: 520px) {
@@ -1051,20 +829,7 @@ a {
   .about-card,
   .quote-card,
   .star-wars-card,
-  .star-wars-projects,
-  .voting-card,
-  .submit-box {
+  .star-wars-projects {
     padding: 20px;
-  }
-
-  .winner-info h3 {
-    font-size: 1.5rem;
-  }
-
-  .vote-count {
-    flex-direction: column;
-    gap: 12px;
-  }
-}
   }
 }
