@@ -6,8 +6,8 @@
   --panel-alt: #1b1e22;
   --text: #edf1f5;
   --muted: #b7bec6;
-  --accent: #d0a85c;
-  --accent-strong: #f2c46d;
+  --accent: #d63031;
+  --accent-strong: #ff5555;
   --line: rgba(255, 255, 255, 0.08);
   --shadow: rgba(0, 0, 0, 0.25);
 }
@@ -24,7 +24,7 @@ body {
   margin: 0;
   font-family: "Inter", sans-serif;
   background:
-    radial-gradient(circle at top, rgba(208, 168, 92, 0.18), transparent 28%),
+    radial-gradient(circle at top, rgba(214, 48, 49, 0.18), transparent 28%),
     linear-gradient(180deg, #0d0f12 0%, #111417 100%);
   color: var(--text);
   line-height: 1.6;
@@ -75,11 +75,11 @@ a {
   width: 42px;
   height: 42px;
   border-radius: 12px;
-  background: linear-gradient(135deg, var(--accent), #7a4e14);
+  background: linear-gradient(135deg, var(--accent), #8b2323);
   color: #111;
   font-family: "Cinzel", serif;
   font-weight: 700;
-  box-shadow: 0 10px 24px rgba(208, 168, 92, 0.35);
+  box-shadow: 0 10px 24px rgba(214, 48, 49, 0.35);
 }
 
 .eyebrow {
@@ -192,7 +192,7 @@ a {
 .button.primary {
   background: linear-gradient(135deg, var(--accent), var(--accent-strong));
   color: #120d07;
-  box-shadow: 0 14px 30px rgba(208, 168, 92, 0.35);
+  box-shadow: 0 14px 30px rgba(214, 48, 49, 0.35);
 }
 
 .button.secondary {
@@ -256,7 +256,7 @@ a {
   margin-bottom: 18px;
   border-radius: 24px;
   background:
-    linear-gradient(180deg, rgba(208, 168, 92, 0.08), rgba(0,0,0,0.2)),
+    linear-gradient(180deg, rgba(214, 48, 49, 0.08), rgba(0,0,0,0.2)),
     #151b1f;
   border: 1px solid rgba(255,255,255,0.06);
 }
@@ -554,14 +554,14 @@ a {
   text-align: center;
   border: 1px solid var(--line);
   border-radius: 16px;
-  background: linear-gradient(180deg, rgba(208, 168, 92, 0.05), rgba(25, 29, 33, 0.5));
+  background: linear-gradient(180deg, rgba(214, 48, 49, 0.05), rgba(25, 29, 33, 0.5));
   padding: 32px 24px;
   transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .lore-card:hover {
   transform: translateY(-4px);
-  background: linear-gradient(180deg, rgba(208, 168, 92, 0.1), rgba(25, 29, 33, 0.8));
+  background: linear-gradient(180deg, rgba(214, 48, 49, 0.1), rgba(25, 29, 33, 0.8));
   box-shadow: 0 16px 32px var(--shadow);
 }
 
@@ -718,7 +718,7 @@ a {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border: 1px solid rgba(208, 168, 92, 0.25);
+  border: 1px solid rgba(214, 48, 49, 0.25);
   border-radius: 16px;
   background: linear-gradient(180deg, rgba(25, 63, 108, 0.15), rgba(25, 29, 33, 0.5));
   padding: 32px 24px;
@@ -729,7 +729,7 @@ a {
   transform: translateY(-4px);
   background: linear-gradient(180deg, rgba(25, 63, 108, 0.25), rgba(25, 29, 33, 0.8));
   box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
-  border-color: rgba(208, 168, 92, 0.5);
+  border-color: rgba(214, 48, 49, 0.5);
 }
 
 .sw-card-icon {
@@ -755,7 +755,7 @@ a {
 
 .star-wars-projects {
   background: linear-gradient(180deg, rgba(25, 63, 108, 0.1), rgba(19, 22, 25, 0.96));
-  border: 1px solid rgba(208, 168, 92, 0.15);
+  border: 1px solid rgba(214, 48, 49, 0.15);
   border-radius: 18px;
   padding: 28px;
 }
